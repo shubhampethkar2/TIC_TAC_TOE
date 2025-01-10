@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #e8f4f9; /* Light blue background */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container for Rules */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #548687, #a4c8c6); /* Gradient background */
+    color: #e3dada;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading */
+h1 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Ordered List for Rules */
+ol {
+    text-align: left;
+    font-size: 1.25rem;
+    line-height: 2;
+    margin-top: 20px;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+/* Rule List Items */
+ol li {
+    margin-bottom: 15px;
+}
+
+/* Back to Game Button */
+button {
+    margin-top: 40px;
+    padding: 12px 30px;
+    font-size: 1.5rem;
+    background-color: #fff;
+    color: #548687;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #548687;
+    color: #fff;
+    transform: translateY(-3px); /* Slight upward movement on hover */
+}
+
+/* Adding Smooth Transition for the Whole Container */
+.container {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Scrollbar Styles */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #548687;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #555656;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    ol {
+        font-size: 1.1rem;
+    }
+    
+    button {
+        font-size: 1.25rem;
+        padding: 10px 25px;
+    }
+}
