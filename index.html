@@ -4,41 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-Tac-Toe</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="src/css/index.css">
 </head>
 <body>
-
-    <div class="msg-container hide">
-        <p id="message">Winner</p>
-        <button id="newgame"> New Game</button>
-    </div>
+    
     <main>
         <h1>Tic Tac Toe</h1>
-        <br>
-
-        <!-- Display the current player's turn above the boxes -->
-        <p id="turn">Player O's turn</p>
-
-        <div class="container">
-            <div class="game">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-            </div>
-        </div>
-
         <div class="bt">
-            <button id="Reset">Reset Game</button>
-            <button id="rules">Rules</button>
+            <div> <button id="playFriend">Play with Friend</button></div>
+           <div><button id="playComputer">Play with Computer</button></div>
+            
         </div>
     </main>
- 
+    
+    <script>
+        document.getElementById('playFriend').addEventListener('click', function() {
+            window.location.href = 'friend.html';  // Redirect to play with friend game
+        });
+
+        document.getElementById('playComputer').addEventListener('click', function() {
+            window.location.href = 'computer.html';  // Redirect to play with computer game
+        });
+
+        
+    </script>
 </body>
-<script src="script.js"></script>
 </html>

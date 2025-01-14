@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 15px;
+    font-size: 50px;
+}
+
+body {
+    background-color: #548687;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffcf;
+}
+
+.bt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+#Reset, #rules, #goHome, #newgame, .btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    width: 150px;
+}
+
+/* Styling for the current turn message */
+#turn {
+    font-size: 30px; /* Same font size as h1 */
+    font-weight: bold;
+    color: #ffffc7;
+    text-align: center;
+    margin-bottom: 10px; /* Space below the turn message */
+}
+
+#message {
+    color: #ffffc7;
+    font-size: 7vmin;
+    text-align: center;
+}
+
+.msg-container {
+    height: 80vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none; /* Hide initially */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 4rem; /* Smaller title font size for tablets */
+    }
+
+    .box {
+        height: 20vmin;
+        width: 20vmin;
+        font-size: 10vmin; /* Adjust box size and font size for smaller screens */
+    }
+
+    #message {
+        font-size: 10vmin; /* Adjust message font size for smaller screens */
+    }
+
+    .bt {
+        gap: 15px;
+    }
+
+    #Reset, #rules, #goHome, #newgame {
+        font-size: 1.1rem; /* Slightly smaller font for buttons */
+        width: 120px; /* Smaller buttons */
+    }
+
+    #turn {
+        font-size: 24px; /* Adjust turn message font size */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem; /* Smaller title font size for mobile */
+    }
+
+    .box {
+        height: 25vmin;
+        width: 25vmin;
+        font-size: 12vmin; /* Increase box size for mobile */
+    }
+
+    #message {
+        font-size: 12vmin; /* Adjust message font size for mobile */
+    }
+
+    .bt {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #Reset, #rules, #goHome, #newgame {
+        font-size: 1rem; /* Even smaller font for buttons */
+        width: 100%; /* Full width buttons for mobile */
+        padding: 1rem;
+    }
+
+    #turn {
+        font-size: 20px; /* Smaller turn message font size */
+    }
+}

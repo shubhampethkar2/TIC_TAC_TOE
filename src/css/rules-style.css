@@ -92,15 +92,39 @@ body::-webkit-scrollbar-track {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem;  /* Adjust font size for tablets */
     }
     
     ol {
-        font-size: 1.1rem;
+        font-size: 1.1rem;  /* Slightly smaller font size for better readability */
     }
     
     button {
         font-size: 1.25rem;
-        padding: 10px 25px;
+        padding: 10px 25px;  /* Adjust padding for smaller buttons */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;  /* Reduced padding for mobile devices */
+    }
+
+    h1 {
+        font-size: 2rem;  /* Smaller title font size for mobile */
+    }
+
+    .container {
+        padding: 20px;  /* Adjust padding for mobile */
+    }
+
+    ol {
+        font-size: 1rem;  /* Smaller font size for mobile */
+    }
+
+    button {
+        font-size: 1.1rem;
+        padding: 10px 20px;  /* Smaller button size for mobile */
+        width: 100%;  /* Full-width buttons on mobile for easier clicking */
     }
 }

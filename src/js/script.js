@@ -6,6 +6,9 @@ let msg = document.querySelector("#message");
 let rulesButton = document.querySelector("#rules");
 let turnDisplay = document.querySelector("#turn");
 
+
+
+
 let TurnO = true;  // true for Player O's turn, false for Player X's turn
 let gameOver = false;
 
@@ -120,6 +123,11 @@ rulesButton.addEventListener("click", () => {
 // Add event listeners for other buttons (new game, reset)
 newgame.addEventListener("click", resetGame);
 resetbutton.addEventListener("click", resetGame);
+
+document.getElementById('goHome').addEventListener('click', function() {
+    window.location.href = 'index.html';  // Redirect to the homepage (index.html)
+});
+
 
 // Show the initial turn when the page loads
 showTurn();  // Show the initial player's turn when the page loads
