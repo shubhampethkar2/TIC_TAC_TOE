@@ -60,6 +60,7 @@ body {
     border-radius: 1rem;
     border: none;
     width: 150px;
+    cursor: pointer;
 }
 
 /* Styling for the current turn message */
