@@ -149,7 +149,7 @@ const showDraw = () => {
 // Show Player O's turn (for the player)
 const showTurn = () => {
     if (!gameOver) {
-        turnDisplay.innerText = "Player O's turn";  // Always display Player O's turn
+        turnDisplay.innerText = "Your turn";  // Always display Player O's turn
     } else {
         turnDisplay.innerText = '';  // Clear the turn message when the game is over
     }
